@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/79b463d521.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Password Strength</title>
+</head>
+<body id="register-page">
+    <div id="background"></div>
+    <form class="form-container" autocomplete="off">
+        <h1 class="form-title">Member Registration</h1>
+        <p class="form-text">Enter the fields below to create your account.</p>
+        <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-input-field" placeholder="John Doe" />
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-input-field" placeholder="john.doe@example.com" />
+        </div>
+        <div class="form-control">
+            <label for="phone">Phone</label>
+            <input type="phone" name="phone" class="form-input-field" placeholder="5755551234" />
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-input-field" placeholder="Create a New Password" id="password"/>
+        </div>
+        <div class="form-control">
+            <label for="confirm">Confirm Password</label>
+            <input type="password" name="confirm" class="form-input-field" placeholder="Confirm New Password"/>
+        </div>
+        <div class="form-control">
+            <label for="agree">Agree to the Site Terms</label>
+            <input type="checkbox" name="agree" class="custom-checkbox" />
+        </div>
+        <div class="form-button-control">
+            <button class="form-button-secondary">Register</button>
+        </div>
+        <p class="form-text">Already Have an Account? <a href="#"  class="form-link-alt">Sign In</a></p>
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>

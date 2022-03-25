@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Dongle&family=Dosis&family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap");
+
+:root {
+  --font-heading: "Dongle", sans-serif;
+  --font-button: "Open Sans Condensed", sans-serif;
+  --font-title: "Dosis", sans-serif;
+  --font-text: "Arvo", serif;
+  --font-input: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #fefefe;
+  font-family: var(--font-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 50px;
+}
+
+.counter-container i {
+  margin-bottom: 0.5rem;
+}
+
+.counter {
+  font-size: 60px;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}

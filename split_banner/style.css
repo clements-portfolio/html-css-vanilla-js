@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Dongle&family=Dosis&family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap");
+
+:root {
+  --font-heading: "Dongle", sans-serif;
+  --font-button: "Open Sans Condensed", sans-serif;
+  --font-title: "Dosis", sans-serif;
+  --font-text: "Arvo", serif;
+  --font-input: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-title);
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #fff;
+  border: #fff solid 0.3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: var(--font-input);
+  text-transform: uppercase;
+  width: 15rem;
+  padding: 1.5rem;
+}
+
+.split.right .btn:hover {
+  background-color: rgba(28, 214, 74, 0.8);
+}
+
+.split.left .btn:hover {
+  background-color: rgba(46, 43, 43, 0.7);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.right {
+  left: 0;
+  background: url("./images/splash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.split.left {
+  right: 0;
+  background: url("./images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(61, 196, 95, 0.6);
+}
+
+.split.right,
+.split.left,
+.split.right::before,
+.split.left::before {
+  transition: all 1s ease-in-out;
+}
+
+.hover-left .left {
+  width: 75%;
+}
+
+.hover-left .right {
+  width: 25%;
+}
+
+.hover-right .left {
+  width: 25%;
+}
+
+.hover-right .right {
+  width: 75%;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 1.65rem;
+    top: 15%;
+  }
+
+  .btn {
+    padding: 0.75rem;
+    width: 12rem;
+  }
+}

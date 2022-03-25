@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Dongle&family=Dosis&family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap");
+
+:root {
+  --font-heading: "Dongle", sans-serif;
+  --font-button: "Open Sans Condensed", sans-serif;
+  --font-title: "Dosis", sans-serif;
+  --font-text: "Arvo", serif;
+  --font-input: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-title);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.trigger-container {
+  background-color: #333;
+  border: #333 solid 6px;
+  color: #fefefe;
+  position: fixed;
+  padding: 1rem;
+  right: 0;
+  top: 0;
+  border-radius: 2% 2% 2% 40%;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  opacity: 0.7;
+}
+
+.trigger-container:hover {
+  opacity: 1;
+  transition-duration: 0.2s;
+}
+
+.site-menu {
+  position: absolute;
+  margin-bottom: 200vh;
+  padding: 3rem;
+  font-size: 1.4rem;
+  background-color: #333;
+  color: #fefefe;
+  text-align: center;
+  opacity: 0.95;
+  min-width: 25vw;
+  border-radius: 10px;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.35s;
+}
+
+.site-links li {
+  margin-bottom: 0.65rem;
+}
+
+#service-trigger,
+#about-trigger,
+#resource-trigger,
+#blog-trigger,
+#connect-trigger {
+  cursor: pointer;
+}
+
+.service-links,
+.about-links,
+.resource-links,
+.blog-links,
+.connect-links {
+  margin: 0.65rem;
+  font-size: 1.1rem;
+}
+
+.service-links a,
+.about-links a,
+.resource-links a,
+.blog-links a,
+.connect-links a {
+  color: #fefefe;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.service-links a:hover,
+.about-links a:hover,
+.resource-links a:hover,
+.blog-links a:hover,
+.connect-links a:hover {
+  color: #ffcb23;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.blog-links small {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.35rem;
+  color: #ffcb23;
+}

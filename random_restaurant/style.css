@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=Swap");
+
+:root {
+  --font-heading: "Dongle", sans-serif;
+  --font-button: "Open Sans Condensed", sans-serif;
+  --font-title: "Dosis", sans-serif;
+  --font-text: "Arvo", serif;
+  --font-input: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2b88f0;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+h3 {
+  color: #fefefe;
+  margin: 10px 0 20px;
+}
+
+.container {
+  width: 500px;
+}
+
+textarea {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100px;
+  font-family: inherit;
+  padding: 10px;
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+
+.tag {
+  background-color: #ffcb23;
+  color: #333;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.tag.highlight {
+  background-color: #273c75;
+  color: #fefefe;
+}
