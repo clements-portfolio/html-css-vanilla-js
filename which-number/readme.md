@@ -8,4 +8,4 @@ This basic JavaScript game allows a user to guess the value of a randomly select
     - Event Delegation
   - Skeleton CSS
 
-Published March 24, 2022 by Steven Clements
+Published April 2, 2022 by Steven Clements
